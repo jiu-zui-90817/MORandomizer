@@ -1,6 +1,6 @@
 # MORandomizer (Mental Omega / Red Alert 2 Weapon Randomizer)
 
-🎲 **MORandomizer** 是一个基于 C++ 与 YRpp 编写的《红色警戒 2：心灵终结 (Mental Omega)》内存注入插件。它能够绕过游戏引擎的底层限制，在游戏对战中实时、动态地将场上单位的武器进行“盲盒洗牌”！
+🎲 **MORandomizer** 是一个基于 C++ 与 YRpp 编写的《红色警戒 2：心灵终结 (Mental Omega)》内存注入扩展。它能够绕过游戏引擎的底层限制，在游戏对战中实时、动态地将场上单位的武器进行“盲盒洗牌”！
 
 **想看动员兵发射光棱激光？想看坦克丢出基洛夫航弹？在这里，一切皆有可能。**
 
