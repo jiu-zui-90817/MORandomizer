@@ -18,6 +18,7 @@
 ## 🎮 安装与使用 (Usage)
 
 ### 适合普通玩家 (小白玩家)
+
 1. 在 [Releases](../../releases) 页面下载最新版本的压缩包。
 2. 将 `MORandomizer.dll` 和 `MORandomizer.ini` 放入你的《心灵终结》游戏根目录。
 3. 启动游戏进入战局后，运行压缩包内附带的 `MORandomizerLauncher.exe`（注入器）将 DLL 注入游戏进程。
@@ -29,6 +30,7 @@
    * `R`：一键恢复原厂设定
 
 ### ⚙️ 配置文件 (MORandomizer.ini)
+
 插件具有极高的可玩性与自定义空间。你可以通过修改 `MORandomizer.ini` 来实现：
 * 修改快捷键映射。
 * 决定建筑、空军是否参与变异。
@@ -40,25 +42,30 @@
 本插件基于 **YRpp** 底层头文件库开发。如果你想自行编译或进行二次开发：
 
 ### 环境依赖
+
 * **Visual Studio** (推荐 2019 或 2022)
 * **[YRpp](https://github.com/Phobos-developers/YRpp)** 库（用于红警 2 内存类的反射）
 * **Syringe**（Ares 平台的注入支持头文件）
 
 ### 编译步骤
+
 1. 克隆本项目：`git clone https://github.com/jiu-zui-90817/MORandomizer.git`
 2. 将 YRpp 和 Syringe 的头文件路径添加到 Visual Studio 的 `包含目录 (Include Directories)` 中。
 3. 将项目配置设置为 **Release | Win32**（红警 2 是 32 位游戏，切勿编译为 x64）。
 4. 按下 `Ctrl + Shift + B` 生成解决方案，输出的 `MORandomizer.dll` 即为成品。
 
 ## ⚠️ 终极警告 (Warning)
+
 《心灵终结 3.3.6》的底层逻辑极其复杂（如焚风阵营的高度魔改机制）。尽管本插件已经内置了海量的崩溃防御逻辑，但**过度频繁的洗牌或在交火密集期强行大乱炖，仍有极低概率引发游戏底层的内存指针越界（IE报错）**。
 建议开启 `MORandomizer.ini` 中的黑匣子日志功能，如遇报错，请查阅日志最后一行分配的武器，并将其特征词加入黑名单。
 
 ## 📄 开源协议 & 鸣谢 (License & Credits)
+
 本项目核心逻辑基于 **[GPL-3.0 License](LICENSE)** 开源。
 你可以自由地使用、修改并将其整合到你的《心灵终结》或其他红警 2 扩展版中，但**必须**同样以开源形式共享你的修改，并保留原作者署名。
 
 **特别鸣谢 (Special Thanks):**
+
 * 感谢 [YRpp](https://github.com/Phobos-developers/YRpp) 提供的底层内存反射库。
 * 感谢 Ares/Syringe 提供的完美 DLL 注入环境。
 * 感谢 Mental Omega (心灵终结) 制作组带来的极致游戏体验。
